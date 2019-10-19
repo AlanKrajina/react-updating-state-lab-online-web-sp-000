@@ -20,7 +20,7 @@ export default class YouTubeDebugger extends React.Component {
     this.setState({
       settings: {
         ...this.state.settings, // SPREAD - returns all the keys and values from within that object
-        bitrate: 'New York City'
+        bitrate: 12
       }
     })
   }
