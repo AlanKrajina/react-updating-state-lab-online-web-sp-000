@@ -25,9 +25,19 @@ export default class YouTubeDebugger extends React.Component {
     })
   }
 
+  simulate = () => {
+    this.setState({
+      settings: {
+        ...this.state.settings,
+        bitrate: 12
+      }
+    })
+  }
+  
   render() {
     return (
       <button className="bitrate" onClick={this.updateBitrate}></button>
+      <button className="resolution" onClick={this.simulate}></button>
     );
   }
 }
