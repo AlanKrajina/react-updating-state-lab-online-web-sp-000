@@ -16,12 +16,14 @@ export default class YouTubeDebugger extends React.Component {
     }
   }
 
-  handleClick = () => {
-   let newCount = this.state.timesClicked + 1
-   this.setState({
-     timesClicked: newCount
-   })
- }
+  updateBitrate = () => {
+    this.setState({
+      addressInfo: {
+        ...this.state.addressInfo, // SPREAD - returns all the keys and values from within that object
+        city: 'New York City'
+      }
+    })
+  }
 
   render() {
     return (
