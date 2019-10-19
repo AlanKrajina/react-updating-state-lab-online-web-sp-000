@@ -10,6 +10,13 @@ export default class DigitalClicker extends React.Component {
     }
   }
 
+  handleClick = () => {
+   let newCount = this.state.count + 1
+   this.setState({
+     count: newCount
+   })
+ }
+
   render() {
     return (
       <button  onClick={this.handleClick} ></button>
