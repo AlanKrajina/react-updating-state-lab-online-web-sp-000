@@ -28,7 +28,7 @@ export default class YouTubeDebugger extends React.Component {
   simulate = () => {
     this.setState({
       settings: {
-        ...this.state.settings.video,
+        ...this.state.settings,
         resolution: '720p'
       }
     })
