@@ -3,12 +3,11 @@ import React, { Component } from 'react';
 
 export default class DigitalClicker extends React.Component {
 
-  handleFocus = () => {
-    console.log('Good!');
-  }
-
-  handleBlur = () => {
-    console.log('Hey! Eyes on me!');
+  constructor() {
+    super()
+    this.state = {
+      timesClicked: 0
+    }
   }
 
   render() {
